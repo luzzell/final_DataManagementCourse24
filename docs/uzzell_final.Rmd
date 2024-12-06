@@ -70,10 +70,16 @@ To prepare the tiles for recruitment, a 5/16" hole was drilled into each tile us
 ```{r include=FALSE}
 library(plyr)
 library(ggplot2)
+library(tidyverse)
 ```
 
+```{r include=FALSE}
+recruit.array <- read.csv("~/Documents/UVI/GIS/final/Uzzell_final/data/recruits_array_zeros.csv")
+```
+
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-recruit.hab.summary.zeros <- ddply(recruits_array_zeros, ~habitat_Type, summarise, 
+recruit.hab.summary.zeros <- ddply(recruit.array, ~habitat_Type, summarise, 
                              mean = mean(recruit_rate), 
                              sd = sd(recruit_rate), 
                              n = length(recruit_rate), 
@@ -91,7 +97,7 @@ recruit.hab.plot
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-recruit.site.summary.zeros <- ddply(recruits_array_zeros, ~Site, summarise, 
+recruit.site.summary.zeros <- ddply(recruit.array, ~Site, summarise, 
                               mean = mean(recruit_rate), 
                               sd = sd(recruit_rate), 
                               n = length(recruit_rate), 
