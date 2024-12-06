@@ -1,0 +1,13 @@
+﻿Site,habitat_Type,array_ID,recruit_number,recruit_rate
+Otter,Debris,U1,0,0.000
+Otter,Debris,U2,1,0.031
+Otter,Debris,U3,1,0.031
+Otter,Fringing,S1,2,0.062
+Otter,Fringing,S2,9,0.278
+Otter,Fringing,S3,0,0.000
+Water,Debris,U1,1,0.031
+Water,Debris,U2,2,0.062
+Water,Debris,U3,1,0.031
+Water,Fringing,S1,1,0.031
+Water,Fringing,S2,1,0.031
+Water,Fringing,S3,1,0.031
